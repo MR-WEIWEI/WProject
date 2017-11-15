@@ -1,0 +1,111 @@
+PODS:
+  - Alamofire (4.5.1)
+  - HandyJSON (4.0.0-beta.1)
+  - HCSStarRatingView (1.5)
+  - InputKitSwift (1.1.0)
+  - IQKeyboardManagerSwift (5.0.4)
+  - JCore (1.1.6)
+  - JPush (3.0.7):
+    - JCore (~> 1.1.6)
+  - Kingfisher (4.1.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - MonkeyKing (1.4.1)
+  - Moya/Core (10.0.0):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (10.0.0):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - PromiseKit (4.4.3):
+    - PromiseKit/Foundation (= 4.4.3)
+    - PromiseKit/QuartzCore (= 4.4.3)
+    - PromiseKit/UIKit (= 4.4.3)
+  - PromiseKit/Alamofire (4.4.3):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (4.4.3)
+  - PromiseKit/Foundation (4.4.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.4.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.4.3):
+    - PromiseKit/CorePromise
+  - PullToRefreshKit (0.7.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - Result (3.2.4)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SlideMenuControllerSwift (3.0.2)
+  - SwifterSwift (4.0.1):
+    - SwifterSwift/AppKit (= 4.0.1)
+    - SwifterSwift/CoreGraphics (= 4.0.1)
+    - SwifterSwift/CoreLocation (= 4.0.1)
+    - SwifterSwift/Foundation (= 4.0.1)
+    - SwifterSwift/SwiftStdlib (= 4.0.1)
+    - SwifterSwift/UIKit (= 4.0.1)
+  - SwifterSwift/AppKit (4.0.1)
+  - SwifterSwift/CoreGraphics (4.0.1)
+  - SwifterSwift/CoreLocation (4.0.1)
+  - SwifterSwift/Foundation (4.0.1)
+  - SwifterSwift/SwiftStdlib (4.0.1)
+  - SwifterSwift/UIKit (4.0.1)
+
+DEPENDENCIES:
+  - HandyJSON (= 4.0.0-beta.1)
+  - HCSStarRatingView (~> 1.5)
+  - InputKitSwift (= 1.1)
+  - IQKeyboardManagerSwift (= 5.0.4)
+  - JPush (= 3.0.7)
+  - Kingfisher (= 4.1.0)
+  - MagicalRecord (= 2.3.2)
+  - MonkeyKing (= 1.4.1)
+  - Moya/RxSwift
+  - PromiseKit (= 4.4.3)
+  - PromiseKit/Alamofire
+  - PullToRefreshKit (= 0.7.0)
+  - R.swift (= 4.0)
+  - RxCocoa (= 4.0.0)
+  - RxSwift (= 4.0.0)
+  - SlideMenuControllerSwift (from `https://github.com/dekatotoro/SlideMenuControllerSwift`, branch `swift4`)
+  - SwifterSwift (= 4.0.1)
+
+EXTERNAL SOURCES:
+  SlideMenuControllerSwift:
+    :branch: swift4
+    :git: https://github.com/dekatotoro/SlideMenuControllerSwift
+
+CHECKOUT OPTIONS:
+  SlideMenuControllerSwift:
+    :commit: 88ed3c28b17fdbb194dfa8b2c8e37c742c0b78a7
+    :git: https://github.com/dekatotoro/SlideMenuControllerSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
+  HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
+  InputKitSwift: eb233969368b38f9b54daf4c91dea219788728e3
+  IQKeyboardManagerSwift: a0592bb636b10a9a1cf75d2b2c61144226226c84
+  JCore: 18fc8725124f26e55625eaf224659b3a999dcf63
+  JPush: 111b79b8a0169ab8fd4c486dac3ed166ed69293e
+  Kingfisher: f14df8cbe576bf55f211fa589e9869bceb4ea87d
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  MonkeyKing: 85ff5f12a49ddaaa30cf7d2b2cb7e5d5ab476f8e
+  Moya: adb58b0f4e58430db43cc6e2f6ebab1836501186
+  PromiseKit: fbb52a0d154402c57eeb6eccd36dd7724fcf6117
+  PullToRefreshKit: 8a1de4451090e30094f266393cb4642d4a47d899
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SlideMenuControllerSwift: 9e8d2bba8ea9201c6207acb76e95a2841453ec9c
+  SwifterSwift: 5f406a5f831343312d6d5b34282b57ef3f52c40b
+
+PODFILE CHECKSUM: e3be8869610ae8b66283ece524292676d261db1f
+
+COCOAPODS: 1.3.1
