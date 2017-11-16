@@ -30,7 +30,7 @@ class PersionalInfoVC: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     func initData() {
         
-        self.dataArr = [("昵称",""),("性别",""),("年龄",""),("出生地",""),("居住地",""),("经验年数",""),("结束时间","")]
+        self.dataArr = [("昵称",""),("性别",""),("年龄",""),("出生地",""),("居住地",""),("经验年数",""),("支付类型",""),("支付账号",""),("用户类型",""),("工种",""),("报价",""),("收货地址","")]
         
         for (title, unit) in self.dataArr {
             
@@ -40,13 +40,13 @@ class PersionalInfoVC: UIViewController, UITableViewDataSource, UITableViewDeleg
             
             switch title {
                 
-            case "发包类型":
+            case "性别":
                 publicModel.type = .selectNormal
-                publicModel.dataArr = ["发包1","发包2","发包3"]
-            case "需要工种":
+                publicModel.dataArr = ["男","女"]
+            case "出生地":
                 publicModel.type = .selectNormal
                 publicModel.dataArr = ["工种1","工种2","工种3"]
-            case "开工时间":
+            case "居住地":
                 publicModel.type = .selectTime
             case "结束时间":
                 publicModel.type = .selectTime
@@ -81,8 +81,27 @@ class PersionalInfoVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         let cell = tableView.dequeueReusableCell(withIdentifier: R.nib.editCell.identifier) as! EditCell
         
         cell.setView(model: self.modelArr[indexPath.row])
+        cell.valueChangedClosure = { [weak self] newValue in
+            
+            print(newValue)
+            self?.saveData()
+        }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        self.view.endEditing(true)
+    }
+}
+
+extension PersionalInfoVC {
+    
+    func saveData() {
+        
     }
 }
 

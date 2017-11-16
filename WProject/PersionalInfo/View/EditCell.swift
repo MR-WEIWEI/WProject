@@ -31,6 +31,8 @@ class EditCell: UITableViewCell, UITextFieldDelegate {
     
     var model = EditCellModel()
     
+    var valueChangedClosure: ((_ newValue: String) -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -48,6 +50,7 @@ class EditCell: UITableViewCell, UITextFieldDelegate {
         self.model = model
         
         self.titleLable.text = model.title
+        self.textField.delegate = self
         
         if model.unit.count > 0 {
             self.unitLabel.isHidden = false
@@ -57,12 +60,15 @@ class EditCell: UITableViewCell, UITextFieldDelegate {
         else {
             self.unitLabel.isHidden = true
             self.rightArrowImgView.isHidden = false
-            
-            self.textField.delegate = self
         }
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
+        guard self.model.type != .input else {
+            
+            return true
+        }
         
         self.superview?.endEditing(true)
         
@@ -72,6 +78,8 @@ class EditCell: UITableViewCell, UITextFieldDelegate {
             normalPicker.ensureBtnClickedNormalClosure = { [weak self] index in
                 
                 self?.textField.text = self?.model.dataArr[index]
+                
+                self?.valueChangedClosure?((self?.textField.text)!)
             }
         }
         else if self.model.type == .selectTime {
@@ -81,8 +89,21 @@ class EditCell: UITableViewCell, UITextFieldDelegate {
             timePicker.ensureBtnClickedTimeClosure = { [weak self] dateStr in
                 
                 self?.textField.text = dateStr
+                self?.valueChangedClosure?((self?.textField.text)!)
             }
         }
+        
+        return false
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        var str = textField.text ?? ""
+        str.replaceSubrange(Range.init(range, in: self.textField.text!)!, with: string)
+        
+        textField.text = str
+        
+        self.valueChangedClosure?(str)
         
         return false
     }

@@ -10,6 +10,7 @@ import UIKit
 
 enum PickerType {
     case normal
+    case address
     case date
     case time
 }
@@ -33,6 +34,7 @@ class WPicker: UIView {
     
     fileprivate var normalPicker = UIPickerView()
     fileprivate var datePicker = UIDatePicker()
+    fileprivate var addressPicker = UIPickerView()
     
     var ensureBtnClickedNormalClosure: ((_ index: Int) -> Void)?
     var ensureBtnClickedTimeClosure: ((_ timeStr: String) -> Void)?
@@ -52,6 +54,8 @@ class WPicker: UIView {
         switch type {
         case .normal:
             wPicker.createNormalPicker(dataArr: dataArr)
+        case .address:
+            wPicker.createAddressPicker()
         case .date:
             wPicker.createDatePicker()
         case .time:
@@ -128,8 +132,28 @@ extension WPicker: UIPickerViewDataSource, UIPickerViewDelegate {
         self.addSubview(normalPicker)
     }
     
+    // MARK:- addressPicker
+    func createAddressPicker() {
+        
+        addressPicker.frame = CGRect(x: 0, y: screenHeight - 215, width: screenWidth, height: 215)
+        addressPicker.backgroundColor = UIColor.white
+        
+        addressPicker.dataSource = self
+        addressPicker.delegate = self
+        
+        self.addSubview(addressPicker)
+    }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         
+        if pickerView == normalPicker {
+            
+            return 1
+        }
+        else if pickerView == addressPicker {
+            
+            return 3
+        }
         return 1
     }
     
@@ -166,4 +190,9 @@ extension WPicker {
         
         self.addSubview(datePicker)
     }
+}
+
+extension WPicker {
+    
+    
 }
