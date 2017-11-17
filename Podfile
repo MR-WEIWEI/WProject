@@ -1,9 +1,9 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+ platform :ios, '9.0'
 
-target ‘WProject’ do
-
-    use_frameworks!
+target 'WProject' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
 
     pod 'JPush', '3.0.7'
 
@@ -24,7 +24,7 @@ target ‘WProject’ do
 
     pod 'Kingfisher', '4.1.0' #A lightweight, pure-Swift library for downloading and caching images from the web.
 
-#pod 'Format', '0.5.0' # Simple formatting syntax for decimal numbers, currency, mass, addresses, ordinal numbers and hexadecimal colors.
+    #pod 'Format', '0.5.0' # Simple formatting syntax for decimal numbers, currency, mass, addresses, ordinal numbers and hexadecimal colors.
 
     pod 'Moya/RxSwift'
 
@@ -41,10 +41,12 @@ target ‘WProject’ do
 
     pod 'InputKitSwift', ' 1.1'
 
-#    pod 'UMengAnalytics'
+    #    pod 'UMengAnalytics'
 
-#    pod 'RealmSwift', '3.0.0-beta.3'
+    #    pod 'RealmSwift', '3.0.0-beta.3'
 
     pod 'HCSStarRatingView', '~> 1.5' #slide star
-    
+
+    pod 'FSCalendar'
+
 end

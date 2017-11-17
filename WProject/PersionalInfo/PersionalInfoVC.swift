@@ -28,36 +28,6 @@ class PersionalInfoVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         // Dispose of any resources that can be recreated.
     }
     
-    func initData() {
-        
-        self.dataArr = [("昵称",""),("性别",""),("年龄",""),("出生地",""),("居住地",""),("经验年数",""),("支付类型",""),("支付账号",""),("用户类型",""),("工种",""),("报价",""),("收货地址","")]
-        
-        for (title, unit) in self.dataArr {
-            
-            let publicModel = EditCellModel()
-            publicModel.title = title
-            publicModel.unit = unit
-            
-            switch title {
-                
-            case "性别":
-                publicModel.type = .selectNormal
-                publicModel.dataArr = ["男","女"]
-            case "出生地":
-                publicModel.type = .selectNormal
-                publicModel.dataArr = ["工种1","工种2","工种3"]
-            case "居住地":
-                publicModel.type = .selectTime
-            case "结束时间":
-                publicModel.type = .selectTime
-            default:
-                break
-            }
-            
-            self.modelArr.append(publicModel)
-        }
-    }
-    
     func initSubviews() {
         
         self.tableView.dataSource = self
@@ -87,6 +57,7 @@ class PersionalInfoVC: UIViewController, UITableViewDataSource, UITableViewDeleg
             self?.saveData()
         }
         
+        
         return cell
     }
     
@@ -95,6 +66,39 @@ class PersionalInfoVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         tableView.deselectRow(at: indexPath, animated: true)
         
         self.view.endEditing(true)
+    }
+}
+
+extension PersionalInfoVC {
+    
+    func initData() {
+        
+        self.dataArr = [("昵称",""),("性别",""),("年龄",""),("出生地",""),("居住地",""),("经验年数",""),("支付类型",""),("支付账号",""),("用户类型",""),("工种",""),("报价",""),("收货地址","")]
+        
+        for (title, unit) in self.dataArr {
+            
+            let publicModel = EditCellModel()
+            publicModel.title = title
+            publicModel.unit = unit
+            
+            switch title {
+                
+            case "性别":
+                publicModel.type = .selectNormal
+                publicModel.dataArr = ["男","女"]
+            case "出生地":
+                publicModel.type = .selectNormal
+                publicModel.dataArr = ["工种1","工种2","工种3"]
+            case "居住地":
+                publicModel.type = .selectTime
+            case "结束时间":
+                publicModel.type = .selectTime
+            default:
+                break
+            }
+            
+            self.modelArr.append(publicModel)
+        }
     }
 }
 

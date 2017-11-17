@@ -21,7 +21,9 @@
 		ED305DA31FBC1C46006E3066 /* EditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED305DA11FBC1C46006E3066 /* EditCell.xib */; };
 		ED305DA61FBC1C52006E3066 /* WPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED305DA51FBC1C52006E3066 /* WPicker.swift */; };
 		ED305DAA1FBC1D44006E3066 /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED305DA91FBC1D44006E3066 /* ConfigManager.swift */; };
-		ED305DAE1FBC26DF006E3066 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED305DAD1FBC26DE006E3066 /* R.generated.swift */; };
+		ED450B241FBE83CE003CA43C /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED450B221FBE83CE003CA43C /* CalendarVC.swift */; };
+		ED450B251FBE83CE003CA43C /* CalendarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED450B231FBE83CE003CA43C /* CalendarVC.xib */; };
+		ED450B281FBE8B2A003CA43C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED450B271FBE8B2A003CA43C /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +45,10 @@
 
 /* Begin PBXFileReference section */
 		23DB784F27556514A00B7A5C /* Pods-WProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WProject/Pods-WProject.debug.xcconfig"; sourceTree = "<group>"; };
+		41B76AA79C6668190A7A678B /* Pods_WProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD4B76E8BB716819E5816A4 /* Pods-WProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-WProject/Pods-WProject.release.xcconfig"; sourceTree = "<group>"; };
 		84EADF81AE1FC89B0394B884 /* Pods_WProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC1A27D1B5144D21CA9992C /* Pods_WProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED305D691FBC1B14006E3066 /* WProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED305D6C1FBC1B14006E3066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED305D6E1FBC1B14006E3066 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +68,9 @@
 		ED305DA11FBC1C46006E3066 /* EditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditCell.xib; sourceTree = "<group>"; };
 		ED305DA51FBC1C52006E3066 /* WPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPicker.swift; sourceTree = "<group>"; };
 		ED305DA91FBC1D44006E3066 /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
-		ED305DAD1FBC26DE006E3066 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		ED450B221FBE83CE003CA43C /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		ED450B231FBE83CE003CA43C /* CalendarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarVC.xib; sourceTree = "<group>"; };
+		ED450B271FBE8B2A003CA43C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				84EADF81AE1FC89B0394B884 /* Pods_WProject.framework */,
+				CEC1A27D1B5144D21CA9992C /* Pods_WProjectTests.framework */,
+				41B76AA79C6668190A7A678B /* Pods_WProjectUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,8 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				ED305DA91FBC1D44006E3066 /* ConfigManager.swift */,
+				ED450B141FBD7DE4003CA43C /* Views */,
+				ED450B131FBD7D81003CA43C /* Calendar */,
 				ED305DA81FBC1D03006E3066 /* SupportingFiles */,
-				ED305DA41FBC1C52006E3066 /* WPicker */,
 				ED305D9A1FBC1B1C006E3066 /* PersionalInfo */,
 				ED305D6C1FBC1B14006E3066 /* AppDelegate.swift */,
 				ED305D6E1FBC1B14006E3066 /* ViewController.swift */,
@@ -197,9 +206,26 @@
 		ED305DA81FBC1D03006E3066 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				ED305DAD1FBC26DE006E3066 /* R.generated.swift */,
+				ED450B271FBE8B2A003CA43C /* R.generated.swift */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		ED450B131FBD7D81003CA43C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				ED450B221FBE83CE003CA43C /* CalendarVC.swift */,
+				ED450B231FBE83CE003CA43C /* CalendarVC.xib */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		ED450B141FBD7DE4003CA43C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED305DA41FBC1C52006E3066 /* WPicker */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +236,7 @@
 			buildConfigurationList = ED305D911FBC1B14006E3066 /* Build configuration list for PBXNativeTarget "WProject" */;
 			buildPhases = (
 				FA8C9326BA73B531FD584CB4 /* [CP] Check Pods Manifest.lock */,
-				ED305DA71FBC1CD1006E3066 /* ShellScript */,
+				ED450B261FBE8A41003CA43C /* ShellScript */,
 				ED305D651FBC1B14006E3066 /* Sources */,
 				ED305D661FBC1B14006E3066 /* Frameworks */,
 				ED305D671FBC1B14006E3066 /* Resources */,
@@ -318,6 +344,7 @@
 				ED305D9E1FBC1B50006E3066 /* PersionalInfoVC.xib in Resources */,
 				ED305D721FBC1B14006E3066 /* Main.storyboard in Resources */,
 				ED305DA31FBC1C46006E3066 /* EditCell.xib in Resources */,
+				ED450B251FBE83CE003CA43C /* CalendarVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +388,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WProject/Pods-WProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/HCSStarRatingView/HCSStarRatingView.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
@@ -381,6 +409,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCSStarRatingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
@@ -403,7 +432,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WProject/Pods-WProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED305DA71FBC1CD1006E3066 /* ShellScript */ = {
+		ED450B261FBE8A41003CA43C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -442,11 +471,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED305DA21FBC1C46006E3066 /* EditCell.swift in Sources */,
-				ED305DAE1FBC26DF006E3066 /* R.generated.swift in Sources */,
 				ED305DA61FBC1C52006E3066 /* WPicker.swift in Sources */,
 				ED305D6F1FBC1B14006E3066 /* ViewController.swift in Sources */,
+				ED450B281FBE8B2A003CA43C /* R.generated.swift in Sources */,
 				ED305D6D1FBC1B14006E3066 /* AppDelegate.swift in Sources */,
 				ED305D9D1FBC1B50006E3066 /* PersionalInfoVC.swift in Sources */,
+				ED450B241FBE83CE003CA43C /* CalendarVC.swift in Sources */,
 				ED305DAA1FBC1D44006E3066 /* ConfigManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,7 +649,7 @@
 				INFOPLIST_FILE = WProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--.WProject";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weiwei.tec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -636,7 +666,7 @@
 				INFOPLIST_FILE = WProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--.WProject";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weiwei.tec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -12,8 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        self.navigationController?.pushViewController(PersionalInfoVC(), animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.pushViewController(CalendarVC(), animated: true)
     }
 
     override func didReceiveMemoryWarning() {

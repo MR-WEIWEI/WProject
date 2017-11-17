@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.5.1)
+  - FSCalendar (2.7.9)
   - HandyJSON (4.0.0-beta.1)
   - HCSStarRatingView (1.5)
   - InputKitSwift (1.1.0)
@@ -56,6 +57,7 @@ PODS:
   - SwifterSwift/UIKit (4.0.1)
 
 DEPENDENCIES:
+  - FSCalendar
   - HandyJSON (= 4.0.0-beta.1)
   - HCSStarRatingView (~> 1.5)
   - InputKitSwift (= 1.1)
@@ -86,6 +88,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
   HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
   HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
   InputKitSwift: eb233969368b38f9b54daf4c91dea219788728e3
@@ -106,6 +109,6 @@ SPEC CHECKSUMS:
   SlideMenuControllerSwift: 9e8d2bba8ea9201c6207acb76e95a2841453ec9c
   SwifterSwift: 5f406a5f831343312d6d5b34282b57ef3f52c40b
 
-PODFILE CHECKSUM: e3be8869610ae8b66283ece524292676d261db1f
+PODFILE CHECKSUM: a403fa60123b0b6a085ad322c12ef56f5db68da8
 
 COCOAPODS: 1.3.1
