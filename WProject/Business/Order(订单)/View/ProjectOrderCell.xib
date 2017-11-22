@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="projectOrderCell" rowHeight="417" id="KGk-i7-Jjw" customClass="ProjectOrderCell" customModule="XianMuShu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="416.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sar-6v-QU6">
+                        <rect key="frame" x="10" y="5" width="300" height="406.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工种中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lb4-zt-UJH">
+                                <rect key="frame" x="15" y="10" width="45" height="17.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.98431372549019602" green="0.6705882352941176" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFh-rB-W3E">
+                                <rect key="frame" x="0.0" y="87.5" width="300" height="1"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="sNq-bz-wtg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxR-JO-Nq1">
+                                <rect key="frame" x="0.0" y="88.5" width="300" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Pbm-mu-Q8r"/>
+                                </constraints>
+                                <state key="normal" title="确认工人到场">
+                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ensureBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MFD-um-SJp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/11/10-2017/11/30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oya-iP-ZF9">
+                                <rect key="frame" x="15" y="32.5" width="144" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="tgG-rQ-FKS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江苏省 苏州市 工业园区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddm-nm-Aln">
+                                <rect key="frame" x="15" y="57.5" width="150.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="aAf-IA-wOd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ddm-nm-Aln" firstAttribute="leading" secondItem="oya-iP-ZF9" secondAttribute="leading" id="Beg-zK-swL"/>
+                            <constraint firstItem="oya-iP-ZF9" firstAttribute="leading" secondItem="Lb4-zt-UJH" secondAttribute="leading" id="FbI-D2-ND5"/>
+                            <constraint firstItem="Lb4-zt-UJH" firstAttribute="top" secondItem="Sar-6v-QU6" secondAttribute="top" constant="10" id="IZf-C6-9uf"/>
+                            <constraint firstItem="SxR-JO-Nq1" firstAttribute="leading" secondItem="Sar-6v-QU6" secondAttribute="leading" id="JaN-pg-sdw"/>
+                            <constraint firstItem="SFh-rB-W3E" firstAttribute="leading" secondItem="Sar-6v-QU6" secondAttribute="leading" id="Ltm-AW-sf3"/>
+                            <constraint firstItem="SFh-rB-W3E" firstAttribute="top" secondItem="ddm-nm-Aln" secondAttribute="bottom" constant="10" id="RP5-Dq-jh6"/>
+                            <constraint firstItem="SxR-JO-Nq1" firstAttribute="top" secondItem="SFh-rB-W3E" secondAttribute="bottom" id="RpC-gG-8Wz"/>
+                            <constraint firstAttribute="trailing" secondItem="SFh-rB-W3E" secondAttribute="trailing" id="Xsm-55-Xwu"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SxR-JO-Nq1" secondAttribute="bottom" id="cKN-dM-DA0"/>
+                            <constraint firstItem="oya-iP-ZF9" firstAttribute="top" secondItem="Lb4-zt-UJH" secondAttribute="bottom" constant="5" id="czA-tC-51i"/>
+                            <constraint firstItem="Lb4-zt-UJH" firstAttribute="leading" secondItem="Sar-6v-QU6" secondAttribute="leading" constant="15" id="gdI-Fi-p0F"/>
+                            <constraint firstAttribute="trailing" secondItem="SxR-JO-Nq1" secondAttribute="trailing" id="omk-v3-UdR"/>
+                            <constraint firstItem="ddm-nm-Aln" firstAttribute="top" secondItem="oya-iP-ZF9" secondAttribute="bottom" constant="5" id="v2i-6Z-Xox"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sar-6v-QU6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0w8-K1-Dwb"/>
+                    <constraint firstAttribute="trailing" secondItem="Sar-6v-QU6" secondAttribute="trailing" constant="10" id="90G-zT-ujT"/>
+                    <constraint firstItem="Sar-6v-QU6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="VLT-Fc-JRE"/>
+                    <constraint firstAttribute="bottom" secondItem="Sar-6v-QU6" secondAttribute="bottom" constant="5" id="eG8-5z-UrJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ensureBtn" destination="SxR-JO-Nq1" id="ZsW-os-QbL"/>
+                <outlet property="orderAddressLabel" destination="ddm-nm-Aln" id="pZl-HQ-BwN"/>
+                <outlet property="orderDeadlineLabel" destination="oya-iP-ZF9" id="3cY-lL-PNV"/>
+                <outlet property="orderStateLabel" destination="Lb4-zt-UJH" id="DsN-VH-E5y"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="271.5"/>
+        </tableViewCell>
+    </objects>
+</document>

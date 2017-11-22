@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yu4-AF-RDd" customClass="DropSelectItemView" customModule="XianMuShu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2b-uf-tFj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBP-td-v3e">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                    <connections>
+                        <action selector="openDropClicked:" destination="yu4-AF-RDd" eventType="touchUpInside" id="5M2-I4-GyH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Knf-SL-sh2" firstAttribute="trailing" secondItem="z2b-uf-tFj" secondAttribute="trailing" id="40O-EI-bz9"/>
+                <constraint firstItem="Knf-SL-sh2" firstAttribute="bottom" secondItem="z2b-uf-tFj" secondAttribute="bottom" id="9DZ-Ag-zEK"/>
+                <constraint firstItem="DBP-td-v3e" firstAttribute="top" secondItem="Knf-SL-sh2" secondAttribute="top" id="LhU-Zx-sHE"/>
+                <constraint firstItem="DBP-td-v3e" firstAttribute="bottom" secondItem="Knf-SL-sh2" secondAttribute="bottom" id="TYR-xL-7G6"/>
+                <constraint firstItem="Knf-SL-sh2" firstAttribute="trailing" secondItem="DBP-td-v3e" secondAttribute="trailing" id="Xdx-uE-MQ6"/>
+                <constraint firstItem="z2b-uf-tFj" firstAttribute="top" secondItem="Knf-SL-sh2" secondAttribute="top" id="bEO-hq-43X"/>
+                <constraint firstItem="DBP-td-v3e" firstAttribute="leading" secondItem="Knf-SL-sh2" secondAttribute="leading" id="q18-4I-bcu"/>
+                <constraint firstItem="z2b-uf-tFj" firstAttribute="leading" secondItem="Knf-SL-sh2" secondAttribute="leading" id="zfe-xd-1uj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Knf-SL-sh2"/>
+            <connections>
+                <outlet property="itemBtn" destination="DBP-td-v3e" id="9Pd-ej-qPK"/>
+                <outlet property="itemLabel" destination="z2b-uf-tFj" id="qCs-M9-Bxq"/>
+            </connections>
+            <point key="canvasLocation" x="-293.5" y="392.5"/>
+        </view>
+    </objects>
+</document>
